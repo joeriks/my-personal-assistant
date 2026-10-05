@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "title": "My overview",
+  "owner": "configured_during_setup",
+  "fields": [
+    {
+      "name": "Status",
+      "type": "single_select",
+      "mapping": {
+        "inbox": "Inbox",
+        "planned": "Planned",
+        "in_progress": "In progress",
+        "waiting": "Waiting",
+        "done": "Done",
+        "cancelled": "Cancelled"
+      }
+    },
+    {
+      "name": "Priority",
+      "type": "single_select",
+      "mapping": {
+        "high": "High",
+        "normal": "Normal",
+        "low": "Low"
+      }
+    },
+    {
+      "name": "Planned date",
+      "type": "date",
+      "source": "planned_date"
+    },
+    {
+      "name": "Deadline",
+      "type": "date",
+      "source": "deadline"
+    },
+    {
+      "name": "Follow-up",
+      "type": "date",
+      "source": "follow_up_date"
+    },
+    {
+      "name": "Time estimate",
+      "type": "number",
+      "source": "estimate_minutes"
+    }
+  ],
+  "views": [
+    {
+      "name": "All tasks",
+      "layout": "table",
+      "filter": "label:assistant:task"
+    },
+    {
+      "name": "Board",
+      "layout": "board",
+      "group_by": "Status",
+      "filter": "label:assistant:task"
+    },
+    {
+      "name": "Inbox",
+      "layout": "table",
+      "filter": "label:assistant:task Status:Inbox"
+    },
+    {
+      "name": "Waiting",
+      "layout": "table",
+      "filter": "label:assistant:task Status:Waiting"
+    },
+    {
+      "name": "Projects",
+      "layout": "table",
+      "filter": "label:assistant:project"
+    }
+  ],
+  "per_project_view": {
+    "layout": "board",
+    "group_by": "Status",
+    "filter_pattern": "label:assistant:task label:project:<slug>"
+  },
+  "notes": "This is an intended configuration, not an installed board. Verify filters and API support during setup; use the GitHub UI for views the API cannot configure. Project status and task status have different meanings. Do not automatically assign task statuses to project Issues."
+}

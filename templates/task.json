@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "id": "task-example-task",
+  "title": "Example task",
+  "area_id": null,
+  "project_id": null,
+  "status": "inbox",
+  "priority": "normal",
+  "next_step": "Describe the next concrete step.",
+  "description": "Brief background and relevant context.",
+  "planned_date": null,
+  "deadline": null,
+  "follow_up_date": null,
+  "estimate_minutes": null,
+  "updated_at": "2026-01-01T00:00:00Z"
+}

@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "labels": [
+    {
+      "name": "assistant:task",
+      "color": "1d76db",
+      "description": "A task in the personal notebook"
+    },
+    {
+      "name": "assistant:project",
+      "color": "5319e7",
+      "description": "A project with a defined outcome"
+    },
+    {
+      "name": "assistant:inbox",
+      "color": "fbca04",
+      "description": "New information to organize"
+    }
+  ],
+  "dynamic_labels": {
+    "area_prefix": "area:",
+    "project_prefix": "project:"
+  }
+}

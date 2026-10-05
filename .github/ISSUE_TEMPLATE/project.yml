@@ -1,0 +1,14 @@
+name: Project
+description: A defined outcome that can be broken down into tasks.
+labels: ["assistant:project"]
+body:
+  - type: textarea
+    id: outcome
+    attributes:
+      label: What do I want to achieve?
+      description: An unfinished idea is a valid starting point.
+  - type: textarea
+    id: context
+    attributes:
+      label: Background
+      description: What the assistant needs to know.

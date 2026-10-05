@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "date": "2026-01-01",
+  "timezone": "UTC",
+  "entries": [
+    {
+      "id": "activity-example-entry",
+      "description": "Example of something the person did during the day.",
+      "task_id": null,
+      "project_id": null,
+      "started_at": null,
+      "ended_at": null,
+      "time_precision": "unknown",
+      "mode": "retrospective",
+      "logged_at": "2026-01-01T18:00:00Z",
+      "outcome": "Briefly describe what was completed or learned."
+    }
+  ]
+}

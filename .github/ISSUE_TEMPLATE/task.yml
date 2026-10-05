@@ -1,0 +1,17 @@
+name: Task or something to remember
+description: Capture something quickly. The assistant can help organize it later.
+labels: ["assistant:task", "assistant:inbox"]
+body:
+  - type: markdown
+    attributes:
+      value: "Write what you know. During the next review, the assistant assigns a stable ID and saves the matching task in your notebook."
+  - type: textarea
+    id: context
+    attributes:
+      label: What do I need to remember or do?
+      description: Background and a possible next step. Leave blank if the title is enough.
+  - type: input
+    id: deadline
+    attributes:
+      label: Is there a real deadline?
+      placeholder: "YYYY-MM-DD, or leave blank"
